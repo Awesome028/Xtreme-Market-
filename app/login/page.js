@@ -92,22 +92,20 @@ export default function LoginPage() {
           }}
         />
 
-        <button
-          type="submit"
-          style={{
-            width: "100%",
-            marginTop: "20px",
-            padding: "14px",
-            background: "#c84cff",
-            color: "white",
-            border: "none",
-            borderRadius: "10px",
-            fontWeight: "bold",
-            fontSize: "16px",
-          }}
-        >
-          LOGIN
-        </button>
+        <a
+  href="/login"
+  style={{
+    background: "#c84cff",
+    color: "white",
+    border: "none",
+    padding: "10px 16px",
+    borderRadius: "8px",
+    textDecoration: "none",
+    display: "inline-block"
+  }}
+>
+  Login
+</a>
 
         {message && (
           <p style={{ marginTop: "20px", textAlign: "center" }}>
