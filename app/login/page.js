@@ -1,8 +1,5 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-"use client";
-
 import { useState } from "react";
 import { supabase } from "../../lib/supabase";
 
@@ -53,11 +50,18 @@ export default function LoginPage() {
           border: "1px solid #3b1452",
         }}
       >
-        <h1 style={{ color: "#c84cff", textAlign: "center" }}>
+        <h1
+          style={{
+            color: "#c84cff",
+            textAlign: "center",
+          }}
+        >
           XTREME MARKET
         </h1>
 
-        <h2 style={{ textAlign: "center" }}>Login</h2>
+        <h2 style={{ textAlign: "center" }}>
+          Login
+        </h2>
 
         <input
           type="email"
@@ -95,23 +99,31 @@ export default function LoginPage() {
           }}
         />
 
-        <a
-  href="/login"
-  style={{
-    background: "#c84cff",
-    color: "white",
-    border: "none",
-    padding: "10px 16px",
-    borderRadius: "8px",
-    textDecoration: "none",
-    display: "inline-block"
-  }}
->
-  Login
-</a>
+        <button
+          type="submit"
+          style={{
+            width: "100%",
+            marginTop: "20px",
+            padding: "14px",
+            background: "#c84cff",
+            color: "white",
+            border: "none",
+            borderRadius: "10px",
+            fontWeight: "bold",
+            fontSize: "16px",
+            cursor: "pointer",
+          }}
+        >
+          LOGIN
+        </button>
 
         {message && (
-          <p style={{ marginTop: "20px", textAlign: "center" }}>
+          <p
+            style={{
+              marginTop: "20px",
+              textAlign: "center",
+            }}
+          >
             {message}
           </p>
         )}
